@@ -3,20 +3,65 @@
 <head>
 <style>
 
-  pre {
-      font-family: Monospace, Courier;
-      font-size: 24;
-  }
-  
+body {
+    background-color:   #000000;
+    color:              #FFFF00;
+    margin: 0;
+}
+p, a, pre {
+    white-space:        pre;
+    font-family:        monospace, Courier;
+    font-size:          16px;
+    font-weight:        normal;
+    display:            inline-block;
+    margin:             0;
+}
+pre {
+    background-color:   #0000FF;
+    position:           absolute;
+    width:              780px;
+    height:             500px;
+    left:               calc(50% - (780px / 2));
+    top:                calc(50% - (500px / 2));
+}
+
+pre p   { color: #C0C0C0; font-weight: normal; }
+pre p a { color: #FF0000; font-weight: bold; }
+
 </style>
 </head>
 <script>
 </script>
 <body>
 <pre>
-<span style="color:grey">;;  incbin.org</span>
-<span style="color:grey">;;  TODO</span>
-        .incbin "inbin.org"
+
+<p>;===============================================================================</p>
+<p>; init INCBIN.ORG                                                               </p>
+<p>;===============================================================================</p>
+
+
+        incbin      "https://www.inbin.org/index.html"      <p>; <a>TODO</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         db         "incbin 2021",$80
+
 </pre>
 </body>
 </html>
+
